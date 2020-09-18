@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <title>MinimalistClock</title>
+  </head>
+  <body>
+    <section class="principal">
+      <div id="principal__contenedor1" class="principal__contenedor1">
+        <label class="principal__red" for="">R</label>
+        <input class="principal__buttonrgb" type="range" name="principal__uno" id="principal__uno" max="255" />
+        <br />
+        <label class="principal__green" for="">G</label>
+        <input class="principal__buttonrgb" type="range" name="principal__dos" id="principal__dos" max="255" />
+        <br />
+        <label class="principal__blue" for="">B</label>
+        <input class="principal__buttonrgb" type="range" name="principal__tres" id="principal__tres" max="255" />
+        <br />
+        <br />
+        <p>
+          Modo de Uso.
+          <br />
+          La mezcla de los colores primarios (R,G,B) daran cualquier color que
+          desee. Le recomendamos decidir un color a su gusto.
+        </p>
+      </div>
+      <figure class="principal__menu-hamburguesa" id="principal__menu-hamburguesa">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 14l-7 7m0 0l-7-7m7 7V3"
+          />
+        </svg>
+      </figure>
+      <div class="principal__contenedor" id="principal__contenedor">
+        <input
+          readonly
+          type="text"
+          class="principal__contenedor__reloj"
+          id="principal__contenedor__reloj"
+        />
+      </div>
+    </section>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

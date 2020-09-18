@@ -1,0 +1,209 @@
+:root {
+  --bgcolor: #222;
+  --colorletter: #fff;
+  --desktop: (max-width: 1440px);
+  --smartphone: 850px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--bgcolor);
+}
+
+.principal {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+.principal__contenedor1 {
+  position: fixed;
+  top: -100%;
+  left: 3%;
+  z-index: 1;
+  display: block;
+  justify-content: space-evenly;
+  width: 20%;
+  margin-top: 2%;
+  color: var(--colorletter);
+  transition-duration: 300ms;
+}
+
+/* ?contenedor principal */
+
+@media screen and (max-width: 1440px) {
+  .principal__contenedor1 {
+    position: fixed;
+    top: -100%;
+    left: 3%;
+    z-index: 1;
+    display: block;
+    justify-content: space-evenly;
+    width: 20%;
+    margin-top: 2%;
+    color: var(--colorletter);
+    transition-duration: 300ms;
+  }
+
+  .active {
+    top: 4%;
+    transition-duration: 300ms;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .principal__contenedor1 {
+    position: fixed;
+    top: -100%;
+    text-align: center;
+    z-index: 1;
+    display: block;
+    justify-content: space-evenly;
+    width: 90%;
+    margin-top: 2%;
+    color: var(--colorletter);
+    transition-duration: 300ms;
+  }
+
+  .active {
+    top: 10%;
+    transition-duration: 300ms;
+  }
+}
+
+/* .active {
+  top: 4%;
+  transition-duration: 300ms;
+} */
+
+.principal__red {
+  color: red;
+}
+
+.principal__blue {
+  color: rgb(39, 88, 224);
+}
+
+.principal__green {
+  color: green;
+}
+
+/* ? Menu Hamburguesa */
+
+@media screen and (max-width: 1440px) {
+  .principal__menu-hamburguesa {
+    position: fixed;
+    display: block;
+    width: calc(100% - 98%);
+    height: auto;
+    margin: 8px;
+    background-color: transparent;
+    color: #fff;
+    transition-duration: 300ms;
+    transform: rotate(0deg);
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .principal__menu-hamburguesa {
+    position: fixed;
+    display: block;
+    width: calc(100% - 93%);
+    height: auto;
+    margin: 8px;
+    background-color: transparent;
+    color: #fff;
+    transition-duration: 300ms;
+    transform: rotate(0deg);
+  }
+}
+
+/* ?  */
+
+/* .principal__contenedor {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  background-color: inherit;
+}
+
+.principal__contenedor__reloj {
+  width: 80vw;
+  height: 35vh;
+  border-style: none;
+  background-color: inherit;
+  color: var(--colorletter);
+  box-shadow: none;
+  outline: none;
+  font-size: 5rem;
+  text-align: center;
+} */
+
+@media screen and (max-width: 1440px) {
+  .principal__contenedor {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    background-color: inherit;
+  }
+
+  .principal__contenedor__reloj {
+    width: 80vw;
+    height: 35vh;
+    border-style: none;
+    background-color: inherit;
+    color: var(--colorletter);
+    box-shadow: none;
+    outline: none;
+    font-size: 5rem;
+    text-align: center;
+  }
+
+  @media screen and (prefers-reduced-motion) {
+    #principal__contenedor__reloj {
+      transition: none;
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .principal__contenedor {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    background-color: inherit;
+  }
+
+  .principal__contenedor__reloj {
+    width: 80vw;
+    height: 35vh;
+    border-style: none;
+    background-color: inherit;
+    color: var(--colorletter);
+    box-shadow: none;
+    outline: none;
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  @media screen and (prefers-reduced-motion) {
+    #principal__contenedor__reloj {
+      transition: none;
+    }
+  }
+}
