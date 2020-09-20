@@ -1,3 +1,1 @@
 # MinimalistClock
-# MinimalistClock
-# MinimalistClock
