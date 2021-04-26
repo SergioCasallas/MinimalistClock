@@ -37,7 +37,7 @@ body {
 
 /* ?contenedor principal */
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1920px) {
   .principal__contenedor1 {
     position: fixed;
     top: -100%;
